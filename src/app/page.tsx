@@ -9,7 +9,9 @@ export default function Home() {
             Hello, I&apos;m &nbsp;
             <span className="text-green-500  font-bold">Ezekiel Charo</span>
           </h1>
-          <div className="text-sm font-medium text-gray-500">Software Developer | Problem solver</div>
+          <div className="text-sm font-medium text-gray-500">
+            Software Developer | Problem solver
+          </div>
         </div>
         <div className="lg:max-w-96 *:border-l-6 *:border-green-950 *:ps-4">
           <p className="mb-6">
@@ -28,8 +30,8 @@ export default function Home() {
             >
               Zeraki
             </a>
-            , where I&apos;ve contributed to developing a school accounting solution now
-            used by 1000+ schools across Kenya and Uganda.
+            , where I&apos;ve contributed to developing a school accounting
+            solution now used by 1000+ schools across Kenya and Uganda.
           </p>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -43,9 +45,7 @@ export default function Home() {
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/projects"
           >
             View My Projects
           </a>
@@ -59,8 +59,17 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Image
+            className="hidden dark:inline-block"
             aria-hidden
             src="/github.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          <Image
+            className="dark:hidden"
+            aria-hidden
+            src="/github-dark.svg"
             alt="Globe icon"
             width={16}
             height={16}
