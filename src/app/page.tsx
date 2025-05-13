@@ -4,10 +4,16 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl font-bold">Hello, I&apos;m Ezekiel Charo,</h1>
-        <div className="lg:max-w-96 *:border-l-4 *:border-white *:ps-4">
+        <div>
+          <h1 className="text-4xl font-semibold mb-2">
+            Hello, I&apos;m &nbsp;
+            <span className="text-green-500  font-bold">Ezekiel Charo</span>
+          </h1>
+          <div className="text-sm font-medium text-gray-500">Software Developer | Problem solver</div>
+        </div>
+        <div className="lg:max-w-96 *:border-l-6 *:border-green-950 *:ps-4">
           <p className="mb-6">
-            A software Engineer with over 4 years of professional experience.
+            A software Developer with over 4 years of professional experience.
           </p>
           <p className="mb-6">
             I build beautiful, performant, and secure web and mobile experiences
@@ -17,7 +23,7 @@ export default function Home() {
             Currently driving innovation at &nbsp;
             <a
               href="https://www.zeraki.app/zeraki-finance"
-              className="text-blue-300 border-b border-blue-400"
+              className="text-green-500 border-b border-green-500"
               target="_blank"
             >
               Zeraki
@@ -48,7 +54,7 @@ export default function Home() {
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-3 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/ezekiel-charo"
           target="_blank"
           rel="noopener noreferrer"
         >
