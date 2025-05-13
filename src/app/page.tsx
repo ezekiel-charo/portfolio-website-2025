@@ -28,14 +28,14 @@ export default function Home() {
             >
               Zeraki
             </a>
-            , where I&apos;ve helped develop a school accounting solution now
+            , where I&apos;ve contributed to developing a school accounting solution now
             used by 1000+ schools across Kenya and Uganda.
           </p>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="/resume.pdf"
+            href="/Ezekiel Charo Resume.pdf"
             rel="noopener noreferrer"
             download
           >
