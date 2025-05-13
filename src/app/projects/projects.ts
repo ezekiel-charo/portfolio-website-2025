@@ -91,4 +91,13 @@ export const projects: Project[] = [
       "Designed and developed a modern, responsive website to showcase company services.",
     ],
   },
+  {
+    imageUrl: "",
+    title: "Personal Portfolio Website",
+    description:
+      "A modern, responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects and skills.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/ezekiel/portfolio-website-2025",
+    live: "https://ezekiel.dev",
+  },
 ];
