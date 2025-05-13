@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl font-bold">Hello, I'm Ezekiel Charo,</h1>
+        <h1 className="text-4xl font-bold">Hello, I&apos;m Ezekiel Charo,</h1>
         <div className="lg:max-w-96 *:border-l-4 *:border-white *:ps-4">
           <p className="mb-6">
             A software Engineer with over 4 years of professional experience.
@@ -22,8 +22,8 @@ export default function Home() {
             >
               Zeraki
             </a>
-            , where I've helped develop a school accounting solution now used by
-            1000+ schools across Kenya and Uganda.
+            , where I&apos;ve helped develop a school accounting solution now
+            used by 1000+ schools across Kenya and Uganda.
           </p>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
