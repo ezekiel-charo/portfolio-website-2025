@@ -11,6 +11,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     imageUrl: "",
+    title: "Bulk SMS Manager",
+    description:
+      "Full-stack messaging app for customer engagement via bulk SMS.",
+    technologies: ["VueJs", "InertiaJS", "Laravel", "PHP", "Tailwindcss"],
+    github: "https://github.com/ezekiel-charo/bulk-sms-manager",
+    live: "https://github.com/ezekiel-charo/bulk-sms-manager",
+    bulletPoints: [],
+  },
+  {
+    imageUrl: "",
     title: "Money Manager",
     description:
       "An offline-first personal income and expense tracker web app.",
@@ -22,7 +32,7 @@ export const projects: Project[] = [
       "PouchDB",
       "Material CDK",
     ],
-    github: "https://github.com/ezQel/personal-finance-manager",
+    github: "https://github.com/ezekiel-charo/personal-finance-manager",
     live: "https://money-manager-101.web.app",
     bulletPoints: [
       "Developed modular UI components using Angular CDK for maintainable and scalable code.",
@@ -37,8 +47,8 @@ export const projects: Project[] = [
     description:
       "A cross-platform journaling application with a robust backend and intuitive mobile UI.",
     technologies: ["NestJS", "React Native", "Postgres"],
-    github: "https://github.com/ezQel/Journal",
-    live: "",
+    github: "https://github.com/ezekiel-charo/Journal",
+    live: "https://github.com/ezekiel-charo/Journal",
     bulletPoints: [
       "Developed a REST API with authentication and CRUD endpoints for journals and categories.",
       "Validated backend data using class-validator.",
@@ -53,7 +63,7 @@ export const projects: Project[] = [
     description:
       "A responsive Point of Sale web application supporting multi-platform use.",
     technologies: ["Angular", "Firebase", "BootStrap", "CapacitorJs"],
-    github: "https://github.com/ezQel/ease-point-of-sale",
+    github: "https://github.com/ezekiel-charo/ease-point-of-sale",
     live: "https://ease-pos.web.app",
     bulletPoints: [
       "Integrated Firebase Authentication and Firestore for secure, scalable data storage.",
@@ -66,38 +76,38 @@ export const projects: Project[] = [
       "Demo credentials: username ‘ezekiel3499@gmail.com’, password ‘password’.",
     ],
   },
-  {
-    imageUrl: "",
-    title: "Gikandafarmers.com",
-    description:
-      "An informational hub for the Gikanda Coffee Farmers Cooperative Society.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "",
-    live: "https://gikandafarmers.com/",
-    bulletPoints: [
-      "Collaborated with designers to gather content and deliver a visually appealing interface.",
-      "Ensured a pleasant user experience across all device sizes.",
-    ],
-  },
-  {
-    imageUrl: "",
-    title: "Smartmovemovers.com",
-    description:
-      "A marketing website for Smart Move Movers, highlighting their services and brand.",
-    technologies: ["Tailwind", "11ty", "Handlebars"],
-    github: "",
-    live: "https://smartmovemovers.com",
-    bulletPoints: [
-      "Designed and developed a modern, responsive website to showcase company services.",
-    ],
-  },
+  // {
+  //   imageUrl: "",
+  //   title: "Smartmovemovers.com",
+  //   description:
+  //     "A marketing website for Smart Move Movers, highlighting their services and brand.",
+  //   technologies: ["Tailwind", "11ty", "Handlebars"],
+  //   github: "",
+  //   live: "https://smartmovemovers.com",
+  //   bulletPoints: [
+  //     "Designed and developed a modern, responsive website to showcase company services.",
+  //   ],
+  // },
   {
     imageUrl: "",
     title: "Personal Portfolio Website",
     description:
       "A modern, responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects and skills.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/ezekiel/portfolio-website-2025",
+    github: "https://github.com/ezekiel-charo/portfolio-website-2025",
     live: "https://ezekiel.dev",
+  },
+  {
+    imageUrl: "",
+    title: "Gikanda farmers website",
+    description:
+      "An informational hub for the Gikanda Coffee Farmers Cooperative Society.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "",
+    live: "https://gikandafarmers.web.app/",
+    bulletPoints: [
+      "Collaborated with designers to gather content and deliver a visually appealing interface.",
+      "Ensured a pleasant user experience across all device sizes.",
+    ],
   },
 ];
