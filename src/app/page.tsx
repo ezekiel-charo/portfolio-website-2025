@@ -1,52 +1,21 @@
 "use client";
 
+import { Lobster_Two } from "next/font/google";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+
+const lobsterTwo = Lobster_Two({
+  weight: "700",
+  subsets: ["latin"],
+});
 
 export default function Home() {
-  const myRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let effect: { destroy: () => void };
-
-    import("vanta/dist/vanta.waves.min").then((vanta) => {
-      const WAVES = vanta.default;
-      if (myRef.current) {
-        effect = WAVES({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          // color: isDarkMode ? 0x0 : 0xcdcdcd,
-          color: 0x0,
-          shininess: 15.0,
-          waveHeight: 15,
-          waveSpeed: 0.55,
-          zoom: 0.8,
-        });
-      }
-    });
-
-    return () => {
-      if (effect) effect.destroy();
-    };
-  }, []);
-
   return (
     <>
-      <div
-        ref={myRef}
-        className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
-      >
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-          <div>
-            <h1 className="text-4xl font-semibold mb-2">
-              Hello, I&apos;m &nbsp;
-              <span className="text-green-500  font-bold">Ezekiel Charo</span>
+          <div className={`${lobsterTwo.className}`}>
+            <h1 className="text-5xl text-green-500 font-bold mb-2">
+              Ezekiel Charo
             </h1>
             <div className="text-sm font-medium text-gray-500">
               Software Developer | Problem solver
@@ -54,14 +23,14 @@ export default function Home() {
           </div>
           <div className="lg:max-w-96 *:border-l-6 *:border-green-950 *:ps-4">
             <p className="mb-6">
-              A software Developer with over 4 years of professional experience.
+              A software Developer with over 5 years of professional experience.
             </p>
             <p className="mb-6">
               I build beautiful, performant, and secure web and mobile
               experiences that make a difference.
             </p>
-            <p>
-              Currently driving innovation at &nbsp;
+            {/* <p>
+              Previously was at &nbsp;
               <a
                 href="https://www.zeraki.app/zeraki-finance"
                 className="text-green-500 border-b border-green-500"
@@ -69,9 +38,9 @@ export default function Home() {
               >
                 Zeraki
               </a>
-              , where I&apos;ve contributed to developing a school accounting
-              solution now used by 1000+ schools across Kenya and Uganda.
-            </p>
+              , where I contributed to developing a school accounting solution
+              used by 1000+ schools across Kenya and Uganda.
+            </p> */}
           </div>
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
